@@ -7,13 +7,15 @@ import com.testfw.element.BaseElement;
 
 public class HomePage {
 	protected By _btnLogin = new By.ByXPath("//a[span[text()='Đăng nhập']]");
-	BaseElement element = new BaseElement(_btnLogin);
+	
+	WebElement btnLogin = new BaseElement(_btnLogin).getElement();
 	
 	public HomePage() {
 		
 	}
 	
 	public LoginPage gotoLoginPage() {
+		btnLogin.click();
 		return new LoginPage();
 	}
 

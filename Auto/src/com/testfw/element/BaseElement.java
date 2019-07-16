@@ -26,7 +26,7 @@ public class BaseElement{
 	
 	public WebElement getElement()
 	{
-		return driver.waitForDisplay(_byLocator, Constants.ELEMENT_TIMEOUT);
+		return Constants.DRIVER.waitForDisplay(_byLocator, Constants.ELEMENT_TIMEOUT);
 	}
 	public void click() {
 		// TODO Auto-generated method stub
