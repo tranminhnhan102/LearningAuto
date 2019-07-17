@@ -18,7 +18,7 @@ import com.testfw.common.Constants;
 
 public class BaseDriver {
 
-	protected WebDriver _driver;
+	private WebDriver _driver;
 
 	protected WebDriver getWebDriver() {
 		return this._driver;

@@ -3,20 +3,16 @@ package com.test.demoProject.pom;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import com.testfw.common.Constants;
 import com.testfw.element.BaseElement;
 
-public class HomePage {
-	protected By _btnLogin = new By.ByXPath("//a[span[text()='Đăng nhập']]");
+public class HomePage extends GeneralPage{
+	//locator
+
+	//Element
+
 	
-	WebElement btnLogin = new BaseElement(_btnLogin).getElement();
-	
-	public HomePage() {
-		
-	}
-	
-	public LoginPage gotoLoginPage() {
-		btnLogin.click();
-		return new LoginPage();
-	}
+	//Methods
+
 
 }

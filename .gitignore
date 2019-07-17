@@ -1,5 +1,7 @@
-.metadata/
+*.metadata/
 Auto/.classpath
 *.prefs
 Auto/.project
 *.MF
+Auto/test-output/
+Auto/target/classes/META-INF/maven/Learning/Auto/pom.properties
